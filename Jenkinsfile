@@ -5,13 +5,13 @@ pipeline {
     stage ('jdk 8') {
       agent { label 'jdk8' }
       steps {
-        sh 'java -version'
+        bat 'java -version'
       }
     }
     stage('jdk 21') {
       agent { label 'jdk21' }
       steps {
-        sh 'java -version'
+        bat 'java -version'
       }
     }
   }
